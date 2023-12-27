@@ -8,6 +8,8 @@ function properMid(list){
     let lastElement = list[list.length-1]
 
     while(leftIndex <= rightIndex && middleIndex < list.length-1){
+    let middleIndex = Math.floor((leftIndex+rightIndex)/2)
+    let middleVal = list[middleIndex]
             if (lastElement > middleVal && rightIndex - leftIndex >1){
                 rightIndex = middleIndex -1
             }
